@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.test.thecatapi.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_breed"
+        android:name="com.test.thecatapi.ui.breed.BreedFragment"
+        android:label="@string/menu_breed"
+        tools:layout="@layout/fragment_breed" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.test.thecatapi.ui.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.test.thecatapi.ui.favorite.FavoriteFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_upload"
+        android:name="com.test.thecatapi.ui.upload.UploadFragment"
+        android:label="@string/upload_image"
+        tools:layout="@layout/fragment_upload" />
+
+</navigation>
